@@ -1,13 +1,28 @@
 body {
-    display: flex; flex-direction: column;
+    display: flex;
     width: 99vw; height: auto;
     background-color: snow; margin: 0 auto;
     padding: 5px 30px;
     font-family: arial;
 }
 
-@media screen and (max-width: 992px) {
-    .column {
-      width: 50%;
+.pseudobody {
+    width: inherit; min-height: 180px;
+    padding: 5px 10px; margin: 0 auto;
+    display: flex; flex-wrap: wrap;
+}
+.pseudobody a {
+    display: inline-block;
+}
+.pseudobody img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 834px) {
+    /* One Pic, desktop layout
+    */
+    .rulesGoHere {
+      color: black;
     }
 }
