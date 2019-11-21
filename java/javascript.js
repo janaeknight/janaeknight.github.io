@@ -1,6 +1,5 @@
 const quickSort = (nums) => {
     if (nums.length<=1) {
-        return nums;
         const picot = nums[nums.length - 1];
         const left = [];
         const right = [];
@@ -14,7 +13,6 @@ const quickSort = (nums) => {
         }
     }
     //return [...quickSort(left), pivot, ...quickSort(right)];
-    return quickSort(left).concat(pivot, quickSort(right));
-
-
+    return quickSort(left).concat(pivot, quickSort(right)); 
 }
+//return nums;
