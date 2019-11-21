@@ -7,31 +7,43 @@ body {
 
 /*============================================================================*/
 
-.flicker-4 {
-	-webkit-animation: flicker-4 4s linear infinite both;
-	animation: flicker-4 4s linear infinite both;
+header {
+    display: flex; flex-direction: row;
+    width: inherit; height: auto; margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
 }
- @-webkit-keyframes flicker-4 {
-    0%, 100% { opacity: 1; } 31.98% { opacity: 1; } 32% { opacity: 0; } 32.8% { opacity: 0; } 32.82% { opacity: 1; } 34.98% { opacity: 1; } 35% { opacity: 0; } 35.7% { opacity: 0; } 35.72% { opacity: 1; } 36.98% { opacity: 1; } 37% { opacity: 0; } 37.6% { opacity: 0; } 37.62% { opacity: 1; } 67.98% { opacity: 1; } 68% { opacity: 0; } 68.4% { opacity: 0; } 68.42% { opacity: 1; } 95.98% { opacity: 1; } 96% { opacity: 0; } 96.7% { opacity: 0; } 96.72% { opacity: 1; } 98.98% { opacity: 1; } 99% { opacity: 0; } 99.6% { opacity: 0; } 99.62% { opacity: 1; }
- }
-  @keyframes flicker-4 {
-    0%, 100% { opacity: 1; } 31.98% { opacity: 1; } 32% { opacity: 0; } 32.8% { opacity: 0; } 32.82% { opacity: 1; } 34.98% { opacity: 1; } 35% { opacity: 0; } 35.7% { opacity: 0; } 35.72% { opacity: 1; } 36.98% { opacity: 1; } 37% { opacity: 0; } 37.6% { opacity: 0; } 37.62% { opacity: 1; } 67.98% { opacity: 1; } 68% { opacity: 0; } 68.4% { opacity: 0; } 68.42% { opacity: 1; } 95.98% { opacity: 1; } 96% { opacity: 0; } 96.7% { opacity: 0; } 96.72% { opacity: 1; } 98.98% { opacity: 1; } 99% { opacity: 0; } 99.6% { opacity: 0; } 99.62% { opacity: 1; }
- }
+header img { margin: 0 auto; }
+#centr { display: none; }
+footer {
+    display: flex; flex-direction: row;
+    width: inherit; height: auto; margin: 0 auto;
+    text-align: center;
+}
 
- /*============================================================================*/
+/*============================================================================*/
 
 .pseudobody {
-    width: inherit; min-height: auto;
-    padding: 5px 10px; margin: 0 auto;
+    width: inherit; min-height: auto; margin: 0 auto;
     display: flex; flex-wrap: wrap;
 }
 /*.pseudobody img:hover {
-    display: inline-block;
+    cursor: here;
 }*/
 
 @media screen and (max-width: 525px) {
     /* One Pic, desktop layout
     */
+    header {
+        display: flex; flex-direction: column;
+        text-align: center; padding: 10px 0;
+        font-size: 120%;
+    }
+    header img {
+        width: 42%;
+        padding: 9px 0;
+    }
+    #left { display: none; }
+    #centr { display: block; }
     .pseudobody img {
         width: 90%;
         margin: 0 auto;
@@ -42,6 +54,17 @@ body {
 @media only screen and (min-width:526px) and (max-width:835px) {
     /* Two Pic, desktop layout
     */
+    header {
+        display: flex; flex-direction: column;
+        text-align: center; padding: 10px 0;
+        font-size: 115%;
+    }
+    header img {
+        width: 32%;
+        padding: 8px 0;
+    }
+    #left { display: none; }
+    #centr { display: block; }
     .pseudobody img {
         width: 40%;
         margin: 0 auto;
@@ -50,11 +73,45 @@ body {
 }
 
 @media screen and (min-width:836px) {
-    /* Three Pic, widescreen desktop layout
+    /* Three Pic, lower widescreen desktop layout
     */
+    header {
+        padding: 10px 0;
+        font-size: 115%;
+    }
+    header img {
+        width: 32%;
+        padding: 8px 0;
+    }
+    #left { display: block; width: 32%; }
+    #centr { display: none; }
+    #right { width: 32%; text-align: right; }
     .pseudobody img {
         width: 30%;
         margin: 0 auto;
         padding: 1% 0;
     }
 }
+
+@media screen and (min-width:1250px) {
+    /* Three Pic, upper widescreen desktop layout
+    */
+    .pseudobody img {
+        width: 26%;
+        margin: 0 auto;
+        padding: 1% 0;
+    }
+}
+
+/*============================================================================*/
+
+.flicker-4 {
+	-webkit-animation: flicker-4 4s linear infinite both;
+	animation: flicker-4 4s linear infinite both;
+}
+ @-webkit-keyframes flicker-4 {
+    0%, 100% { opacity: 1; } 31.98% { opacity: 1; } 32% { opacity: 0; } 32.8% { opacity: 0; } 32.82% { opacity: 1; } 34.98% { opacity: 1; } 35% { opacity: 0; } 35.7% { opacity: 0; } 35.72% { opacity: 1; } 36.98% { opacity: 1; } 37% { opacity: 0; } 37.6% { opacity: 0; } 37.62% { opacity: 1; } 67.98% { opacity: 1; } 68% { opacity: 0; } 68.4% { opacity: 0; } 68.42% { opacity: 1; } 95.98% { opacity: 1; } 96% { opacity: 0; } 96.7% { opacity: 0; } 96.72% { opacity: 1; } 98.98% { opacity: 1; } 99% { opacity: 0; } 99.6% { opacity: 0; } 99.62% { opacity: 1; }
+ }
+  @keyframes flicker-4 {
+    0%, 100% { opacity: 1; } 31.98% { opacity: 1; } 32% { opacity: 0; } 32.8% { opacity: 0; } 32.82% { opacity: 1; } 34.98% { opacity: 1; } 35% { opacity: 0; } 35.7% { opacity: 0; } 35.72% { opacity: 1; } 36.98% { opacity: 1; } 37% { opacity: 0; } 37.6% { opacity: 0; } 37.62% { opacity: 1; } 67.98% { opacity: 1; } 68% { opacity: 0; } 68.4% { opacity: 0; } 68.42% { opacity: 1; } 95.98% { opacity: 1; } 96% { opacity: 0; } 96.7% { opacity: 0; } 96.72% { opacity: 1; } 98.98% { opacity: 1; } 99% { opacity: 0; } 99.6% { opacity: 0; } 99.62% { opacity: 1; }
+ }
