@@ -11,16 +11,25 @@ body {
     padding: 5px 10px; margin: 0 auto;
     display: flex; flex-wrap: wrap;
 }
-.pseudobody a {
+/*.pseudobody img:hover {
     display: inline-block;
-}
+}*/
 .pseudobody img {
     width: 40%;
     margin: 0 auto;
+    padding: 2% 0;
 }
 
 @media screen and (max-width: 834px) {
     /* One Pic, desktop layout
+    */
+    .rulesGoHere {
+      color: black;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    /* Two Pic, desktop layout
     */
     .rulesGoHere {
       color: black;
