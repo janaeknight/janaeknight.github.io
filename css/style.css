@@ -34,9 +34,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
     width: inherit; min-height: auto; margin: 0 auto;
     display: flex; flex-wrap: wrap;
 }
-/*.pseudobody img:hover {
-    cursor: here;
-}*/
 
 @media screen and (max-width: 525px) {
     /* One Pic, desktop layout
@@ -123,3 +120,8 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
   @keyframes flicker-4 {
     0%, 100% { opacity: 1; } 31.98% { opacity: 1; } 32% { opacity: 0; } 32.8% { opacity: 0; } 32.82% { opacity: 1; } 34.98% { opacity: 1; } 35% { opacity: 0; } 35.7% { opacity: 0; } 35.72% { opacity: 1; } 36.98% { opacity: 1; } 37% { opacity: 0; } 37.6% { opacity: 0; } 37.62% { opacity: 1; } 67.98% { opacity: 1; } 68% { opacity: 0; } 68.4% { opacity: 0; } 68.42% { opacity: 1; } 95.98% { opacity: 1; } 96% { opacity: 0; } 96.7% { opacity: 0; } 96.72% { opacity: 1; } 98.98% { opacity: 1; } 99% { opacity: 0; } 99.6% { opacity: 0; } 99.62% { opacity: 1; }
  }
+
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: snow; }
+::-webkit-scrollbar-thumb { background: paleturquoise; }
+::-webkit-scrollbar-thumb:hover { background: #888; }
