@@ -80,19 +80,21 @@ footer {
         font-size: 115%;
     }
     header img {
-        width: 32%;
+        width: 22%;
         padding: 8px 0;
     }
-    #left { display: block; width: 32%; }
+    #left { display: block; width: 39%; padding-top: 14px; }
     #centr { display: none; }
-    #right { width: 32%; text-align: right; }
+    #right { width: 39%; text-align: right; padding-top: 14px; }
     .pseudobody img {
         width: 30%;
         margin: 0 auto;
         padding: 1% 0;
     }
 }
-
+hr {
+    width: 100vw;
+}
 @media screen and (min-width:1250px) {
     /* Three Pic, upper widescreen desktop layout
     */
