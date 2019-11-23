@@ -56,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
     }
     #row { display: block; }
 }
-
 @media only screen and (min-width:526px) and (max-width:835px) {
     /* Two Pic, desktop layout
     */
@@ -77,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
         padding: 2% 0;
     }
 }
-
 @media screen and (min-width:836px) {
     /* Three Pic, lower widescreen desktop layout
     */
@@ -89,9 +87,15 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
         width: 22%;
         padding: 8px 0;
     }
-    #left { display: block; width: 39%; padding-top: 14px; }
+    #left { 
+        display: block; width: 39%; 
+        padding-top: 14px; margin: 0 13px;
+    }
     #centr { display: none; }
-    #right { width: 39%; text-align: right; padding-top: 14px; }
+    #right { 
+        display: block; width: 39%; text-align: right;
+        padding-top: 14px; margin: 0 13px;
+    }
     .pseudobody img {
         width: 30%;
         margin: 0 auto;
@@ -101,10 +105,27 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
 @media screen and (min-width:1250px) {
     /* Three Pic, upper widescreen desktop layout
     */
+    header {
+        padding: 10px 0;
+        font-size: 115%;
+    }
+    header img {
+        width: 22%;
+        padding: 8px 0;
+    }
+    #left { 
+        display: block; width: 39%; 
+        padding-top: 20px; margin: 0 13px;
+    }
+    #centr { display: none; }
+    #right { 
+        display: block; width: 39%; text-align: right;
+        padding-top: 21px; margin: 0 13px;
+    }
     .pseudobody img {
-        width: 24%;
+        width: 23%;
         margin: 0 auto;
-        padding: 1% .5%;
+        padding: 1% .8%;
     }
 }
 
