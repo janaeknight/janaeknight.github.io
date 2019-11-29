@@ -7,18 +7,20 @@
     <title>♡ Knightmare</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <script src="java/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="left"><span>📍 JACKSON, MISSISSIPPI</span></div>
-        <img src="css/media/logo.png" alt="" class="flicker-4" onClick="window.location.href('https://janaeknight.github.io/')">
+        <img src="css/media/logo.png" alt="" class="flicker-4" onClick="window.location.replace('https://janaeknight.github.io')">
         <div id="centr"><br><span>JUNIOR DEV</span><br></div>
-        <div id="right"><span onClick="genFunc()">CONTACT ♡</span></div>
+        <div id="right">
+            <span id="contactBtn" onClick="toContactMenuBtn()">CONTACT ♡</span>
+            <span id="backBtn" onClick="backtoMenuBtn()">« Back to Main</span>
+        </div>
     </header>
     <!--h1>PROJECTS</h1-->
-    <div class="pseudobody">
+    <div class="pseudobody" id="pseudobody">
         <img src="css/media/windows-thumb.png" alt="" id="" onClick="window.open('https://janaeknight.github.io/win-port-temp/')">
         <img src="css/media/primal-thumb.png" alt="" id="" onClick="window.open('https://janaeknight.github.io/primal-demo/')">
         <img src="css/media/pass-thumb.png" alt="" id="" onClick="window.open('https://janaeknight.github.io/password/')">
@@ -33,12 +35,38 @@
         <img src="css/media/blank-thumb.png" alt="" id="" onClick="window.open('')">
         <!--img src="css/media/blank-thumb.png" alt="" id="" onClick="window.open('')"-->
     </div>
-    <!--div class="row">
-        <div class="db5 txt-right"><span id="" onClick="('')">Back to Top</span></div>
-        <div class="db5"><span id="" onClick="('')">See More</span></div>
-    </div-->
+    <div class="txt-center" id="contact">
+        <br><br>
+        <h1>Janae Knight</h1>
+        <form action="https://formspree.io/mrgbpglr" method="POST">
+        <input type="text" name="_replyname" placeholder="Your Name *" required>
+        <input type="text" name="_replyto" placeholder ="Your Email *" required>
+        <textarea name="message" placeholder="Your Message Here..." required></textarea> </label>
+        <button type="submit">Send</button>
+        </form>
+        <p><b>OR</b></p>
+        <p>directly email me at <b>janae.jpeg@gmail.com</b></p>
+    </div>
     <footer class="txt-center">
-        <p></p>
+        <p>Github</p>
     </footer>
+
+
+
+    <script>
+        let backBtn = document.getElementById("backBtn");
+        let contactBtn = document.getElementById("contactBtn");
+        let contact = document.getElementById("contact");
+        let mainBody = document.getElementById("pseudobody");
+        function toContactMenuBtn() {
+            mainBody.style.display = "none";
+            contactBtn.style.display="none";
+            backBtn.style.display = "block";
+            contact.style.display = "block";
+        }
+        function backtoMenuBtn() {
+            window.location.replace("index.html")
+        }
+    </script>
 </body>
 </html>
