@@ -18,10 +18,13 @@ header {
 }
 header img { margin: 0 auto; }
 #centr, #contact, #backBtn { display: none; }
-footer {
-    display: flex; flex-direction: row;
-    width: 99vw; height: auto; margin: 0 auto;
-    text-align: center;
+footer { padding: 2% 0; text-align: center; }
+footer span { padding: .8% 0; font-size: 120%; }
+@media screen and (max-width: 1249px) {
+    footer {
+        display: flex; flex-direction: column;
+        width: 99vw; height: auto; margin: 0 auto;
+    }
 }
 h1, h2, h3, h4, h5, h6 {font-family: 'Source Code Pro', monospace;}
 #row { display: none; }
@@ -146,6 +149,13 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; }
     form {
         display: flex; flex-direction: column;
         width: 50%; margin: 0 auto; font-size: 100px;
+    }
+    footer {
+        display: block;
+        width: 99vw; height: auto; margin: 0 auto;
+    }
+    footer span {
+        padding: 0 2%;
     }
 }
 
