@@ -1,9 +1,9 @@
 body {
-    cursor: url(../css/cur1058.ani), url(../css/cur1058.png), auto !important;
+    cursor: url(../cur1058.ani), url(../cur1058.png), auto !important;
 }
-body img:hover, #contactBtn:hover, #link:hover {
+body img:hover, #contactBtn:hover, #link:hover, button:hover {
     /*cursor: url(../css/cur1058.ani), url(../css/cur1058.png), auto !important;*/
-    cursor: url(../css/cur1055.ani), url(../css/cur1055.png), auto !important;
+    cursor: url(../cur1055.ani), url(../cur1055.png), auto !important;
 }
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
