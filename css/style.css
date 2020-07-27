@@ -66,6 +66,7 @@ input:focus, select:focus, textarea:focus, button:focus { outline: none; }
         display: flex; flex-direction: column;
         width: 80%; margin: 0 auto; font-size: 100px;
     }
+    .nmobile { display: none; } /* Hides Some Non-Mobile Compatible Content*/
 }
 @media only screen and (min-width:526px) and (max-width:835px) {
     /* Two Pic, desktop layout
